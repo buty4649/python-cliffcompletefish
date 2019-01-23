@@ -16,7 +16,7 @@ class CompleteFish(object):
             return 1
         end
 
-        if string match -r "^openstack "(string join " " -- $argv)"\$" (string join " " $cmd)
+        if string match -r "^openstack "(string join " " -- $argv)"\$" (string join " " -- $cmd)
             return 0
         end
 
